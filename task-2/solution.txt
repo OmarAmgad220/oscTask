@@ -7,18 +7,15 @@ mkdir task-2
 cd task-2
 touch greeting.txt
 echo hello world >> greeting.txt
-cd ..
 git add task-2
 it commit -m "Added greeting"
 git checkout -b intro
 cd task-2
 echo I love Git >> greeting.txt
 git add task-2
-cd ..
-git add task-2
 git commit -m "Added I love Git"
 git checkout main
 git merge intro
-git tag v1
-git push -u origin main
+git tag -a v1 -m "tag1 " 
+git push origin main
 
