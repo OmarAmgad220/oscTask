@@ -7,6 +7,7 @@ cd ~/task_dir/
 touch sample.txt
 sudo chmod u=rw,g=r,o=--- sample.txt
 sudo chown newuser sample.txt
+sudo chgrp newgroup sample.txt
 sudo groupdel newgroup
 sudo userdel -r newuser
 sudo apt update
